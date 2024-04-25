@@ -1,31 +1,72 @@
-
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    
-    
-    
-    
-
-
-    
-    
-    <title></title>
-
-    <meta property="og:title" content="" />
-    <meta property="og:type" content="website" />
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RONAK-STREAMING</title>
+<script src="https://content.jwplatform.com/libraries/KB5zFt7A.js"></script>
 </head>
+<style>
+body {
+    background-color: black;
+}
+#container {
+    background-color: black;
+}
+    #telegramButton {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 378px;
+      height: 50px;
+      background: linear-gradient(90deg, darkblue, #001f3f);
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      overflow: hidden;
+      position: relative;
+      animation: flowAnimation 2s infinite;
+    }
 
+    @keyframes flowAnimation {
+      0% {
+        background-position: -200px 0;
+      }
+      100% {
+        background-position: 200px 0;
+        }
+    }
+
+    #telegramButton:hover {
+      animation: none; /* Pause animation on hover */
+      background: linear-gradient(90deg, #001f3f, darkblue); /* Reverse colors on hover */
+    }
+  </style>
 <body>
-    <a style="visibility: hidden" id="urlToFollow" data-fallback-url="#ZgotmplZ" href="https://criccoderm3u.vercel.app/ssh.m3u8">follow</a>
-    <script type="text/javascript">
-        document.getElementById('urlToFollow').click();
-        setTimeout(function() {
-            document.getElementById('urlToFollow').href = document.getElementById('urlToFollow').getAttribute("data-fallback-url");
-            document.getElementById('urlToFollow').click();
-        }, 1000);
-          if(confirm("Join Our Telegram Channel @Cric_insider365 For More Links")) { window.location.href = "https://t.me/livecricketstreaming01" }
-    </script>
-</body>
+<div id="video"></div>
 
+<script type="text/javascript">
+  jwplayer("video").setup({
+    width: "100%",
+    height: "100%",
+    autostart: true,
+    mute: false,
+    file:"https://vkvsd14.mycdn.me/hls/6387946752617.m3u8/sig/OJg5i_1Hsi0/expires/1714142053360/srcIp/103.97.203.194/urls/45.136.20.46/clientType/13/srcAg/CHROME/mid/7024025021289/video.m3u8"
+  });
+</script>
+<script>
+if(confirm("Join Our Telegram Channel")) { window.location.href = "https://t.me/+wHp1c9ZFXklhZjll" }
+</script>
+  <div id="telegramButton" onclick="redirectToTelegram()">
+  Join Telegram
+  </div>
+  <script>
+  function redirectToTelegram() {
+    // Your redirect code here
+    window.location.href = 'https://t.me/+wHp1c9ZFXklhZjll';
+  }
+  </script>
+</body>
 </html>
+
